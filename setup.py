@@ -11,7 +11,7 @@ setup(
     rust_extensions=[RustExtension(
         ".fib_crust.fib_rs",
         path="Cargo.toml", binding=Binding.PyO3)],
-    packages=["fib_rs"],
+    packages=["fib_crust"],
     classifiers=[
             "License :: OSI Approved :: GNU General Public License v3",
             "Development Status :: 3 - Alpha",
@@ -25,10 +25,10 @@ setup(
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'fib-number = fib_rs.'
+            'fib-number = fib_crust.'
             'fib_number_command:'
             'fib_number_command',
-            'config-fib = fib_rs.'
+            'config-fib = fib_crust.'
             'config_number_command:'
             'config_number_command',
         ],
