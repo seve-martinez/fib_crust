@@ -6,12 +6,12 @@ from setuptools_rust import Binding, RustExtension
 
 
 setup(
-    name="flitton-fib-rs",
+    name="fib-crust",
     version="0.1",
     rust_extensions=[RustExtension(
-        ".flitton_fib_rs.flitton_fib_rs",
+        ".fib_rs.fib_rs",
         path="Cargo.toml", binding=Binding.PyO3)],
-    packages=["flitton_fib_rs"],
+    packages=["fib_rs"],
     classifiers=[
             "License :: OSI Approved :: GNU General Public License v3",
             "Development Status :: 3 - Alpha",
@@ -25,10 +25,10 @@ setup(
     zip_safe=False,
     entry_points={
         'console_scripts': [
-            'fib-number = flitton_fib_rs.'
+            'fib-number = fib_rs.'
             'fib_number_command:'
             'fib_number_command',
-            'config-fib = flitton_fib_rs.'
+            'config-fib = fib_rs.'
             'config_number_command:'
             'config_number_command',
         ],
