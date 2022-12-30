@@ -1,0 +1,16 @@
+[package]
+name = "fib_crust"
+version = "0.1.0"
+authors = ["Seve Martinez <motorific@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+
+[lib]
+name = "fib_crust"
+crate-type=["cdylib"]
+
+[dependencies.pyo3]
+version = "0.15.1"
+features = ["extension-module"]
