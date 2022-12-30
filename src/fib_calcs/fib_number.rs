@@ -1,7 +1,7 @@
 use pyo3::prelude::pyfunction;
 
 #[pyfunction]
-pub fn fibonacci_number(number: i32) -> u64 {
+pub fn fibonacci_number(n: i32) -> u64 {
     if n < 0 {
         panic!("{} cannot be negative", n);
     }
