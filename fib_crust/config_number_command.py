@@ -13,7 +13,7 @@ def config_number_command() -> None:
     args = parser.parse_args()
 
     with open(str(os.getcwd()) + '/' + args.path) as f:
-        config_data: dict = yaml.load(f)
+        config_data: dict = yaml.safe_load(f)
 
     print(f"Here is the config data: {config_data}")
     print(f"And the result: {run_config(config_data)}")
