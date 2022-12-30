@@ -9,9 +9,9 @@ setup(
     name="fib-crust",
     version="0.1",
     rust_extensions=[RustExtension(
-        ".fib_crust.fib_rs",
+        ".fib_crust.fib_crust",
         path="Cargo.toml", binding=Binding.PyO3)],
-    packages=["fib_rs"],
+    packages=["fib_crust"],
     classifiers=[
             "License :: OSI Approved :: GNU General Public License v3",
             "Development Status :: 3 - Alpha",
