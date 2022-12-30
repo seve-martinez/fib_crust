@@ -9,7 +9,7 @@ setup(
     name="fib-crust",
     version="0.1",
     rust_extensions=[RustExtension(
-        ".fib_rs.fib_rs",
+        ".fib_crust.fib_rs",
         path="Cargo.toml", binding=Binding.PyO3)],
     packages=["fib_rs"],
     classifiers=[
