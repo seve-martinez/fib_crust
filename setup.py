@@ -28,9 +28,6 @@ setup(
             'fib-number = fib_crust.'
             'fib_number_command:'
             'fib_number_command',
-            'config-fib = fib_crust.'
-            'config_number_command:'
-            'config_number_command',
         ],
     },
     # requirements=[

@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fib-crust
+Version: 0.1
+Classifier: License :: OSI Approved :: GNU General Public License v3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+License-File: LICENSE
