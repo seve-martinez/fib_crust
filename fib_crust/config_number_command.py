@@ -9,7 +9,7 @@ from .fib_crust import run_config
 
 def config_number_command() -> None:
     parser = argparse.ArgumentParser(description='Calc fibs w a config')
-    parser.add_argument('--path', action='store', type=int, required=True)
+    parser.add_argument('--path', action='store', type=str, required=True)
     args = parser.parse_args()
 
     with open(str(os.getcwd()) + '/' + args.path) as f:
